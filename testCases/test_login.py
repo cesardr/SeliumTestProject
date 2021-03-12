@@ -1,0 +1,54 @@
+from Utilities.customLogger import LogGen
+from pageObjects.LoginPage import LoginPage
+
+# from Utilities.readProperties import ReadConfig
+import time
+
+
+class Test_001_Login:
+    baseURL = "http://automationpractice.com/index.php?controller=authentication&back=my-account"
+    useremail = 'vectron36@gmail.com'
+    password = 'Shadow1975'
+
+    logger = LogGen.loggen()
+
+    def test_homePageTile(self, setup):
+
+        self.logger.info(" ************** Test_001_login *********** ")
+        self.logger.info(" ************** verifying home page title *********** ")
+        self.driver = setup
+        self.driver.maximize_window()
+        self.driver.get(self.baseURL)
+        act_title = self.driver.title
+        if act_title == "Login - My Store":
+            assert True
+            time.sleep(10)
+            self.driver.close()
+            self.logger.info("************** Home Page title test is Passed **********")
+        else:
+            self.driver.save_screenshot('.\\Screenshots\\' + 'test_homepageTitle.png')
+            self.driver.close()
+            self.logger.error("************** Home Page Title is Failed *********** ")
+            assert False
+
+    def test_Login(self, setup):
+
+        self.logger.info("************** Verifying Login Test *********** ")
+        self.driver = setup
+        self.driver.maximize_window()
+        self.driver.get(self.baseURL)
+        self.lp = LoginPage(self.driver)
+        self.lp.setUsermail(self.useremail)
+        self.lp.setPassword(self.password)
+        self.lp.clickLogin()
+        act_title = self.driver.title
+        if act_title == 'My account - My Store':
+            assert True
+            self.logger.info("************** Login Test  is Passed *********** ")
+            time.sleep(10)
+            self.driver.close()
+        else:
+            self.driver.save_screenshot('.\\Screenshots\\' + 'test_Login.png')
+            self.driver.close()
+            self.logger.error("************** Login Test Failed *********** ")
+            assert False
