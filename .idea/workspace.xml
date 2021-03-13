@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a81d94a9-aa19-4459-86d0-294887bf077b" name="Default Changelist" comment="Login Test Case whit &#10;assert &#10;report &#10;log&#10;screenshot">
-      <change afterPath="$PROJECT_DIR$/.run/Template Shell Script.run.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.run/pytest in testCases.run.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCases/pytest.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCases/search_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testCases/test_CartShop.py" beforeDir="false" afterPath="$PROJECT_DIR$/testCases/test_cart_shop.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/Test Results - pytest_in_testCases.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Screenshots/test_cart.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screenshots/test_Login.png" beforeDir="false" afterPath="$PROJECT_DIR$/Screenshots/test_Login.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testCases/search_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/testCases/test_search.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testCases/test_cart_shop.py" beforeDir="false" afterPath="$PROJECT_DIR$/testCases/test_cart_shop.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testCases/test_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/testCases/test_login.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -15,6 +16,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" show_ignored="true" />
+  <component name="ExportTestResults" exportFormat="Xml" outputFolder="$PROJECT_DIR$/Reports" userTempatePath="" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -173,7 +175,7 @@
       <workItem from="1615468557595" duration="10000" />
       <workItem from="1615471265822" duration="8306000" />
       <workItem from="1615516635852" duration="29290000" />
-      <workItem from="1615648618710" duration="3426000" />
+      <workItem from="1615648618710" duration="11149000" />
     </task>
     <task id="LOCAL-00001" summary="Login Test Case whit &#10;assert &#10;report &#10;log&#10;screenshot">
       <created>1615540867343</created>
@@ -189,7 +191,21 @@
       <option name="project" value="LOCAL" />
       <updated>1615540916697</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Login Test Case whit &#10;assert &#10;report &#10;log&#10;screenshot">
+      <created>1615671815487</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1615671815487</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Login Test Case whit &#10;assert &#10;report &#10;log&#10;screenshot">
+      <created>1615671915754</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1615671915754</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,7 +232,7 @@
     <option name="LAST_COMMIT_MESSAGE" value="Login Test Case whit &#10;assert &#10;report &#10;log&#10;screenshot" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/SeliumTestProject$pytest_in_testCases.coverage" NAME="pytest in testCases Coverage Results" MODIFIED="1615553962135" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testCases" />
+    <SUITE FILE_PATH="coverage/SeliumTestProject$pytest_in_testCases.coverage" NAME="pytest in testCases Coverage Results" MODIFIED="1615672397898" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testCases" />
     <SUITE FILE_PATH="coverage/SeliumTestProject$pytest_for_test_login_test_homePageTile.coverage" NAME="pytest for test_login.test_homePageTile Coverage Results" MODIFIED="1615466216398" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testCases" />
     <SUITE FILE_PATH="coverage/SeliumTestProject$pytest_for_test_CartShop_Test_002_Cart_test_cart.coverage" NAME="pytest for test_CartShop.Test_002_Cart.test_cart Coverage Results" MODIFIED="1615521009159" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testCases" />
     <SUITE FILE_PATH="coverage/SeliumTestProject$pytest_in_test_login_py.coverage" NAME="pytest in test_login.py Coverage Results" MODIFIED="1615464633242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testCases" />

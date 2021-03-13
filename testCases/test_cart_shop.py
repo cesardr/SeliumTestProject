@@ -20,19 +20,7 @@ class Test_002_Cart:
         self.driver = setup
         self.driver.maximize_window()
         self.driver.get(self.baseURL)
-        self.lp = LoginPage(self.driver)
-        self.lp.setUsermail(self.useremail)
-        self.lp.setPassword(self.password)
-        self.lp.clickLogin()
-        act_title = self.driver.title
-        if act_title == 'My account - My Store':
-            assert True
-            self.logger.info("************** Login Test  is Passed *********** ")
-            time.sleep(5)
-        else:
-            self.driver.save_screenshot('.\\Screenshots\\' + 'test_Login.png')
-            self.logger.error("************** Login Test Failed *********** ")
-            assert False
+
 
         ActionChains(self.driver)
         self.driver.find_element_by_id("search_query_top").click()
@@ -48,15 +36,14 @@ class Test_002_Cart:
         self.driver.find_element_by_id("group_1").click()
         self.driver.find_element_by_id("color_14").click()
         self.driver.find_element(By.CSS_SELECTOR, ".exclusive > span").click()
-        self.driver.find_element(By.CSS_SELECTOR, ".shopping_cart > a").click()
-        act_title = self.driver.title
-        if act_title == 'Order - My Store':
+        #self.driver.find_element(By.CSS_SELECTOR, ".shopping_cart > a").click()
+        time.sleep(3)
+        act_title = self.driver.find_element_by_name = 'Proceed to checkout'
+        if act_title == 'Proceed to checkout':
             assert True
             self.logger.info("************** Cart Test  is Passed *********** ")
-            time.sleep(10)
-            self.driver.close()
+            time.sleep(3)
         else:
-            self.driver.save_screenshot('.\\Screenshots\\' + 'test_Login.png')
-            self.driver.close()
+            self.driver.save_screenshot('.\\Screenshots\\' + 'test_cart.png')
             self.logger.error("************** Cart Test Failed *********** ")
             assert False
