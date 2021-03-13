@@ -1,23 +1,20 @@
-from selenium.webdriver import ActionChains
 from Utilities.customLogger import LogGen
 from pageObjects.LoginPage import LoginPage
 from selenium.webdriver.common.action_chains import ActionChains
-from selenium.webdriver.support import expected_conditions
-from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 import time
 from selenium.webdriver.common.by import By
+import pytest
 
 
-class Test_001_Login:
+class Test_002_Cart:
     baseURL = "http://automationpractice.com/index.php?controller=authentication&back=my-account"
     useremail = 'vectron36@gmail.com'
     password = 'Shadow1975'
 
     logger = LogGen.loggen()
 
-    def test_Login(self, setup):
+    @pytest.mark.sanity
+    def test_Cart(self, setup):
 
         self.logger.info("************** Verifying Login Test *********** ")
         self.driver = setup
@@ -37,7 +34,6 @@ class Test_001_Login:
             self.logger.error("************** Login Test Failed *********** ")
             assert False
 
-
         ActionChains(self.driver)
         self.driver.find_element_by_id("search_query_top").click()
         self.driver.find_element_by_id("search_query_top").send_keys("dress")
@@ -53,5 +49,14 @@ class Test_001_Login:
         self.driver.find_element_by_id("color_14").click()
         self.driver.find_element(By.CSS_SELECTOR, ".exclusive > span").click()
         self.driver.find_element(By.CSS_SELECTOR, ".shopping_cart > a").click()
-
-
+        act_title = self.driver.title
+        if act_title == 'Order - My Store':
+            assert True
+            self.logger.info("************** Cart Test  is Passed *********** ")
+            time.sleep(10)
+            self.driver.close()
+        else:
+            self.driver.save_screenshot('.\\Screenshots\\' + 'test_Login.png')
+            self.driver.close()
+            self.logger.error("************** Cart Test Failed *********** ")
+            assert False

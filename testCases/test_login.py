@@ -1,5 +1,6 @@
 from Utilities.customLogger import LogGen
 from pageObjects.LoginPage import LoginPage
+import pytest
 
 # from Utilities.readProperties import ReadConfig
 import time
@@ -31,6 +32,7 @@ class Test_001_Login:
             self.logger.error("************** Home Page Title is Failed *********** ")
             assert False
 
+    @pytest.mark.regression
     def test_Login(self, setup):
 
         self.logger.info("************** Verifying Login Test *********** ")
@@ -51,4 +53,5 @@ class Test_001_Login:
             self.driver.save_screenshot('.\\Screenshots\\' + 'test_Login.png')
             self.driver.close()
             self.logger.error("************** Login Test Failed *********** ")
+            self.driver.close()
             assert False
