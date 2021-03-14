@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="a81d94a9-aa19-4459-86d0-294887bf077b" name="Default Changelist" comment="Login Test Case whit &#10;assert &#10;report &#10;log&#10;screenshot">
-      <change afterPath="$PROJECT_DIR$/Reports/Test Results - pytest_in_testCases.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Screenshots/test_cart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Screenshots/test_search.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Screenshots/test_Login.png" beforeDir="false" afterPath="$PROJECT_DIR$/Screenshots/test_Login.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testCases/search_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/testCases/test_search.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screenshots/test_cart.png" beforeDir="false" afterPath="$PROJECT_DIR$/Screenshots/test_cart.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testCases/test_cart_shop.py" beforeDir="false" afterPath="$PROJECT_DIR$/testCases/test_cart_shop.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testCases/test_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/testCases/test_login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testCases/test_search.py" beforeDir="false" afterPath="$PROJECT_DIR$/testCases/test_search.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,7 +178,7 @@
       <workItem from="1615468557595" duration="10000" />
       <workItem from="1615471265822" duration="8306000" />
       <workItem from="1615516635852" duration="29290000" />
-      <workItem from="1615648618710" duration="11149000" />
+      <workItem from="1615648618710" duration="28494000" />
     </task>
     <task id="LOCAL-00001" summary="Login Test Case whit &#10;assert &#10;report &#10;log&#10;screenshot">
       <created>1615540867343</created>
@@ -205,7 +208,21 @@
       <option name="project" value="LOCAL" />
       <updated>1615671915754</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Login Test Case whit &#10;assert &#10;report &#10;log&#10;screenshot">
+      <created>1615679744918</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1615679744918</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Login Test Case whit &#10;assert &#10;report &#10;log&#10;screenshot">
+      <created>1615679777759</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1615679777759</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
