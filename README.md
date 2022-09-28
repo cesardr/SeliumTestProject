@@ -1,2 +1,2 @@
-# SeliumTestProject
-PruebaSelenium
+# Selium/ pycharm TestProject
+sim card test
